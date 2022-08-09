@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/reset-padrao.css">
+    <link rel="stylesheet" href="./src/style/style.css" />
+
+    <title>Entrega Final - Módulo 1</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="">
+        <h1 class="nome__loja">Weartake</h1>
+      </div>
+
+      <nav class="links">
+        <a class="link todos" href="#">Todos</a>
+        <a class="link acessorios" href="#">Acessórios</a>
+        <a class="link calcado" href="#">Calçados</a>
+        <a class="link camisetas" href="#">Camisetas</a>
+      </nav>
+
+    </header>
+
+    <main class="container__pagina__principal">
+
+      <ul class="vitrine">
+
+        <li class="card__produto">
+          <figure class="figure">
+            <img src="./src/img/jaqueta.svg" alt="">
+          </figure>
+          <div class="card__descricao__produto">
+            <p class="sessao__produto">Camisetas</p>
+            <h2 class="nome__produto">Lightweight Jacket</h2>
+            <p class="info__produto">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
+            <p class="preco__produto">R$ 100.00</p>
+            <button class="botao__adicionar__carrinho">Adicionar ao carrinho</button>
+          </div>
+        </li>
+   
+      </ul>
+
+      <aside class="container__aside">
+
+        <form class="container__barra__pesquisa" action="">
+          <input class="input__pesquisa" type="text" placeholder="Digite aqui sua pesquisa">
+          <button class="botao__pesquisar">Pesquisar</button>
+        </form>
+
+        <div class="container__carrinho__compras" >
+          <h2 class="titulo__carrinho" >Carrinho de compras</h2>
+          <ul class="produtos__carrinho" >
+
+            <!-- CARRINHO VAZIO -->
+
+            <h2 class="carrinho__vazio">Carrinho vazio</h2>
+            <p class="adicione__itens">Adicione itens</p>
+
+            <!-- CARRINHO COM PRODUTOS -->
+
+            <!-- <li class="container__produto__carrinho">
+              <figure class="figure__carrinho">
+                <img class="imagem__carrinho" src= "./src/img/jaqueta.svg" alt="">
+              </figure>
+              <div class="descricao__produto__carrinho">
+                <h2 class="titulo__produto">Lightweight Jacket</h2>
+                <p class="preco__carrinho">R$ 100,00</p>
+                <button class="botao__remover">Remover produto</button>
+              </div>
+            </li> -->
+
+          
+
+          </ul>
+
+          <!-- RODAPÉ CARRINHO COM PRODUTOS -->
+
+          <div class="container__rodape">
+            <div class="container__quantidade">
+              <p class="texto__quantidade">Quantidade:</p>
+              <p class="quantidade"></p>
+            </div>
+            <div class="container__preco">
+              <p class="texto__total">Total:</p>
+              <p class="total"></p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </aside>
+
+    </main>
+
+
+    
+
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>

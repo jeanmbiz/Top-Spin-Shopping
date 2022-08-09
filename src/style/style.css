@@ -1,0 +1,295 @@
+
+/**** HEADER ****/
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter';
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+}
+
+.nome__loja{
+    font-size: 2rem;
+}
+
+
+.link{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 20px;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #2E245E;
+    border: 1px solid #2E245E;
+    border-radius: 5px;
+}
+
+.todos{
+ 
+}
+
+/* PAGINA PRINCIPAL INTEIRA */
+.container__pagina__principal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+
+/**** CARD PRODUTO ****/
+
+.vitrine{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card__produto{
+    width: 270px;
+    height: 202px;
+    height: 410px;
+    display: inline-block;
+}
+
+.figure{
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+.imagem__card{
+    width: 192px;
+    height: 140px;
+}
+
+.card__descricao__produto{
+    border: 3px solid #F5F5F5; 
+    height: 200px;
+}
+
+.sessao__produto{
+   
+    background-color: #2E245E;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.nome__produto{
+    font-size: 18px;
+    line-height: 24px;
+    margin: 5px;
+}
+
+.info__produto{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 5px;
+}
+
+.preco__produto{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    margin: 5px;
+    color: #2E245E;
+}
+
+.botao__adicionar__carrinho{
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+.botao__adicionar__carrinho:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #2E245E;
+    border: 1px solid #2E245E;
+    border-radius: 5px;
+}
+
+.container__aside{
+    width: 300px;
+}
+
+/**** BARRA DE PESQUISA ****/
+.container__barra__pesquisa{
+    width: 300px; 
+}
+
+.input__pesquisa{
+    padding: 0.5rem;
+    border: 1px solid #F5F5F5;
+    width: 200px;
+
+}
+
+.botao__pesquisar{
+    border: none;
+    padding: 0.5rem;
+    background-color: #2E245E;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* CARRINHO DE COMPRAS */
+
+.container__carrinho__compras{
+    margin-top: 20px;
+}
+
+/* CARRINHO DE COMPRAS - VAZIO */
+.titulo__carrinho{
+    padding: 1rem;
+    background-color: #37268C;
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.produtos__carrinho{
+    background-color: #F5F5F5;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.carrinho__vazio{
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 80px;
+
+}
+
+.adicione__itens{
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+
+/* CARRINHO DE COMPRAS - COM PRODUTOS */
+
+.container__produto__carrinho{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.figure__carrinho{
+
+}
+
+.imagem__carrinho{
+    width: 90px;
+    height: 75px;
+    background-color: white;
+
+}
+
+.descricao__produto__carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.titulo__produto{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.preco__carrinho{
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E245E;
+
+}
+
+.botao__remover{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.botao__remover:hover{
+    cursor: pointer;
+    background-color: #37268C;
+    color: white;
+    border-radius: 5px;
+    padding: 0%;
+}
+
+
+/* RODAPÉ CARRINHO DE COMPRAS */
+.container__rodape{
+    background-color: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    gap: 15px;
+
+}
+
+.container__quantidade{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px
+}
+
+.texto__quantidade{
+
+}
+
+.quantidade{
+
+}
+
+.container__preco{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px
+}
+
+.texto__total{
+
+}
+
+.total{
+
+}
+
