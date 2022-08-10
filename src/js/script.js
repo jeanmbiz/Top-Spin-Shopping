@@ -4,7 +4,6 @@ let carrinho = []
 
 function cardProduto(data){
     const vitrine = document.querySelector('.vitrine')
-    
     vitrine.innerHTML = ""
     
     data.forEach( produto => {
@@ -43,9 +42,7 @@ function cardProduto(data){
         botaoAdicionar.classList.add('botao__adicionar__carrinho')
         botaoAdicionar.innerText = produto.addCart
         botaoAdicionar.id = produto.id
-        
-        // botaoAdicionar.addEventListener('click', () => adicionarCarrinho(produto))
-        
+                
         figure.appendChild(img)
         divDescricao.append(sessao, nome, info, preco, botaoAdicionar)
         li.append(figure, divDescricao)
@@ -81,48 +78,61 @@ function filtrarCamisetas(){
 function cardCarrinho(data){
 
     const produtosCarrinho = document.querySelector('.produtos__carrinho')
-    
     produtosCarrinho.innerHTML = ''
     
-    data.forEach( produto => { 
-        const li = document.createElement('li')
-        li.classList.add('container__produto__carrinho')
-        li.id = produto.id
-    
-        const figure = document.createElement('figure')
-        const img = document.createElement('img')
-        img.classList.add('imagem__carrinho')
-        img.src = produto.img
-        img.alt = produto.nameItem
-    
-        const div = document.createElement('div')
-        div.classList.add('descricao__produto__carrinho')
-    
-         const titulo = document.createElement('h2')
-        titulo.classList.add('titulo__produto')
-        titulo.innerText = produto.nameItem
-    
-        const preco = document.createElement('p')
-        preco.classList.add('preco__carrinho')
-        preco.innerText = `R$ ${produto.value},00`
-    
-        const botaoRemover = document.createElement('button')
-        botaoRemover.classList.add('botao__remover')
-        botaoRemover.innerText = 'Remover produto'
-    
-        // botaoRemover.addEventListener('click', () => removerCarrinho(produto))
-    
-        figure.appendChild(img)
-    
-        div.append(titulo, preco, botaoRemover)
-    
-        li.append(figure, div)
-    
-        produtosCarrinho.append(li)
-        
-    })
-}
+    if(data.length <= 0 ){
+        document.querySelector('.container__rodape').style.display = "none" 
 
+        const containerMensagem = document.createElement('div')
+        containerMensagem.classList.add('mensagem__vazio')
+
+        const carrinhoVazio = document.createElement('h2')
+        carrinhoVazio.classList.add('carrinho__vazio')
+        carrinhoVazio.innerText = "Carrinho vazio"
+
+        const adicioneItens = document.createElement('p')
+        adicioneItens.classList.add('adicione__itens')
+        adicioneItens.innerText = 'Adicione itens'
+
+        containerMensagem.append(carrinhoVazio, adicioneItens)
+        produtosCarrinho.appendChild(containerMensagem)
+
+    } else {
+        document.querySelector('.container__rodape').style.display = "flex"
+        data.forEach( produto => { 
+            const li = document.createElement('li')
+            li.classList.add('container__produto__carrinho')
+            li.id = produto.id
+        
+            const figure = document.createElement('figure')
+            const img = document.createElement('img')
+            img.classList.add('imagem__carrinho')
+            img.src = produto.img
+            img.alt = produto.nameItem
+        
+            const div = document.createElement('div')
+            div.classList.add('descricao__produto__carrinho')
+        
+             const titulo = document.createElement('h2')
+            titulo.classList.add('titulo__produto')
+            titulo.innerText = produto.nameItem
+        
+            const preco = document.createElement('p')
+            preco.classList.add('preco__carrinho')
+            preco.innerText = `R$ ${produto.value},00`
+        
+            const botaoRemover = document.createElement('button')
+            botaoRemover.classList.add('botao__remover')
+            botaoRemover.innerText = 'Remover produto'
+
+            figure.appendChild(img)
+            div.append(titulo, preco, botaoRemover)
+            li.append(figure, div)
+        
+            produtosCarrinho.append(li)
+            
+        })
+    }}
 
 document.querySelector('.vitrine').addEventListener('click', adicionarCarrinho)
 function adicionarCarrinho(clique){
@@ -135,7 +145,6 @@ function adicionarCarrinho(clique){
         valorTotalCarrinho()
     }
 }
-
 
 document.querySelector('.produtos__carrinho').addEventListener('click', removerCarrinho)
 function removerCarrinho(clique){
@@ -154,8 +163,8 @@ function removerCarrinho(clique){
 
 // ADICIONAR E REMOVER PRODUTOS CARRINHO POR ARRAY E COM ADEVENT LISTENER
 // function adicionarCarrinho(produto){
-//     carrinho.push(produto)
-//     dadosCarriho(carrinho)
+    //     carrinho.push(produto)
+    //     dadosCarriho(carrinho)
 // }
 
 // function removerCarrinho(produto){
@@ -164,13 +173,10 @@ function removerCarrinho(clique){
 //     dadosCarriho(carrinho)
 // }
 
-// FAZER CONDICIONAR PARA APARECER CARRINHO VAZIO QDO ARRAY ESTIVER VAZIO
-// FAZER CSS PARA CARRINHO DE COMPRAS ACOMPANHAR BARRA DE ROLAGEM (APRENDI NO CURSO PROGRAMADOR BR)
-// FAZER CSS SE NAO TIVER NENHUM PRODUTO FILTADO NOS BOTOES SUPERIORES, APARECER NA PÁGINA (NÃO HÁ PRDUTOS DESTA CATEGORIA)
-// ARRUMAR BARRA DO HEADER
-// ARRUMAR DENTRO DE card__descricao__produto
-// ARRUMAR IMAGENS DENTRO DO CARRINHO DE COMPRAS (centralizar)
+
+// FAZER LOGICA PARA PESQUISA DE PRODUTOS
 // ARRUMAR ARQUIVO CSS - ORGANIZAR
+// FEZER EFEITO HOVER NA CAIXA DE PRODUTOS - TALVEZ
 
 
 
@@ -186,4 +192,3 @@ function valorTotalCarrinho(){
     },0)
     valorTotal.innerText = `R$ ${total},00`
 }
-
