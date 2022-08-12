@@ -31,17 +31,19 @@ body{
 
 .link{
     text-decoration: none;
+    gap: 5px;
     font-size: 1rem;
     line-height: 1rem;
-    padding: 20px;
+    padding: 5px 10px;
     color: white;
+    margin-right: 10px;
+
 }
 
 .link:hover{
     text-decoration: underline;
     color: white;
-    background-color: #2E245E;
-    border: 1px solid #2E245E;
+    border: 1px solid white;
     border-radius: 5px;
 }
 
@@ -75,12 +77,14 @@ body{
 }
 
 .figure{
-    background-color: #F5F5F5;
+    border: 3px solid #F5F5F5;
     padding: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .imagem__card{
-    width: 192px;
+    width: 140px;
     height: 140px;
 }
 

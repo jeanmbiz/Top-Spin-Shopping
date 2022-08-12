@@ -1,4 +1,4 @@
-import data from "./database.js";
+import produtosTenis from "./database2.js"
 
 let carrinho = []
 
@@ -51,36 +51,35 @@ function cardProduto(data){
         return vitrine  
     })
 }
-cardProduto(data)
+cardProduto(produtosTenis)
 
-
-document.querySelector('.todos').addEventListener('click', () => cardProduto(data))
+document.querySelector('.todos').addEventListener('click', () => cardProduto(produtosTenis))
 
 document.querySelector('.acessorios').addEventListener('click', filtrarAcessorios)
 function filtrarAcessorios(){
-    const acessorio = data.filter( produto => produto.tag[0] === "Acessórios")
+    const acessorio = produtosTenis.filter( produto => produto.tag[0] === "Acessórios")
     cardProduto(acessorio)
 }
 
-document.querySelector('.calcado').addEventListener('click', filtrarCalcado )
-function filtrarCalcado(){
-    const calcado = data.filter( produto => produto.tag[0] === "Calçado")
-    cardProduto(calcado)
+document.querySelector('.calcado').addEventListener('click', filtrarRaquetes )
+function filtrarRaquetes(){
+    const raquetes = produtosTenis.filter( produto => produto.tag[0] === "Raquetes")
+    cardProduto(raquetes)
 }
 
-document.querySelector('.camisetas').addEventListener('click', filtrarCamisetas)
-function filtrarCamisetas(){
-    const camisetas = data.filter( produto => produto.tag[0] === "Camisetas")
-    cardProduto(camisetas)
+document.querySelector('.camisetas').addEventListener('click', filtrarBolsas)
+function filtrarBolsas(){
+    const bolsas = produtosTenis.filter( produto => produto.tag[0] === "Bolsas")
+    cardProduto(bolsas)
 }
 
 
-function cardCarrinho(data){
+function cardCarrinho(produtosTenis){
 
     const produtosCarrinho = document.querySelector('.produtos__carrinho')
     produtosCarrinho.innerHTML = ''
     
-    if(data.length <= 0 ){
+    if(produtosTenis.length <= 0 ){
         document.querySelector('.container__rodape').style.display = "none" 
 
         const containerMensagem = document.createElement('div')
@@ -99,7 +98,7 @@ function cardCarrinho(data){
 
     } else {
         document.querySelector('.container__rodape').style.display = "flex"
-        data.forEach( produto => { 
+        produtosTenis.forEach( produto => { 
             const li = document.createElement('li')
             li.classList.add('container__produto__carrinho')
             li.id = produto.id
@@ -138,7 +137,7 @@ document.querySelector('.vitrine').addEventListener('click', adicionarCarrinho)
 function adicionarCarrinho(clique){
     const alvo = clique.target  
     if(alvo.tagName === "BUTTON"){
-        const encontrado = data.find( elemento => elemento.id == alvo.id)
+        const encontrado = produtosTenis.find( elemento => elemento.id == alvo.id)
         carrinho.push(encontrado)
         cardCarrinho(carrinho)
         qtdadeCarrinho()
@@ -160,26 +159,6 @@ function removerCarrinho(clique){
     }
 }
 
-
-// ADICIONAR E REMOVER PRODUTOS CARRINHO POR ARRAY E COM ADEVENT LISTENER
-// function adicionarCarrinho(produto){
-    //     carrinho.push(produto)
-    //     dadosCarriho(carrinho)
-// }
-
-// function removerCarrinho(produto){
-//     const index = carrinho.indexOf(produto)
-//     carrinho = carrinho.filter( (elemento, i) => index != i )
-//     dadosCarriho(carrinho)
-// }
-
-
-// FAZER LOGICA PARA PESQUISA DE PRODUTOS
-// ARRUMAR ARQUIVO CSS - ORGANIZAR
-// FEZER EFEITO HOVER NA CAIXA DE PRODUTOS - TALVEZ
-
-
-
 function qtdadeCarrinho(){
     const qtdade = document.querySelector('.quantidade')
     qtdade.innerText = carrinho.length
@@ -192,3 +171,24 @@ function valorTotalCarrinho(){
     },0)
     valorTotal.innerText = `R$ ${total},00`
 }
+
+
+const botao = document.querySelector('.botao__pesquisar')
+
+botao.addEventListener('click', () => pesquisarProduto)
+function pesquisarProduto(){
+    botao.preventDefault()
+
+    console.log('pesquisei')
+}
+
+
+
+
+
+// FAZER LOGICA PARA PESQUISA DE PRODUTOS
+// ARRUMAR ARQUIVO CSS - ORGANIZAR
+// FEZER EFEITO HOVER NA CAIXA DE PRODUTOS - TALVEZ
+// MELHORAR CODIGO DE PESQUISAR PRODUTOS
+// REESTUDAR REMOVER PRODUTOS DO CARRINHO (VER SE ESTA FUNCIONANDO CERTINHO)
+// REESTUDAR PESQUISAR PRODUTOS
