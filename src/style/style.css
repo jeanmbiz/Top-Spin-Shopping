@@ -331,3 +331,23 @@ body {
 .id__imagem {
   margin: 5px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  margin: 1rem;
+  border-radius: 1.6rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(248, 0, 50);
+  border-radius: 1.6rem;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
