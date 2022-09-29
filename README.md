@@ -1,5 +1,5 @@
 <div>
-  <img src="./github/pagina inicial.jpg" alt="Pagina Inicial">
+  <img src="./github/pagina inicial.jpg" alt="Pagina Inicial" target=”_blank”>
 </div>
 
 # 🚧 TOP SPIN SHOPPING 🚧
