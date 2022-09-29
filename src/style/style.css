@@ -1,353 +1,333 @@
-
 /**** HEADER ****/
 
-body{
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Inter';
-    
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Inter";
 }
 
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0px 4px 30px -10px rgb(248, 0, 50);
 
-    width: 100%;
-    height: 80px;
-    background-color: #615e5e;
-    border-radius: 0px 10px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(248, 0, 50);
+  border-radius: 0px 10px;
 }
 
-.nome__loja{
-    font-size: 2rem;
-    color: white;
-    padding: 20px;
+.nome__loja {
+  font-size: 2rem;
+  color: white;
+  padding: 20px;
 }
 
-
-.link{
-    text-decoration: none;
-    gap: 5px;
-    font-size: 1rem;
-    line-height: 1rem;
-    padding: 5px 10px;
-    color: white;
-    margin-right: 10px;
-
+.link {
+  text-decoration: none;
+  gap: 5px;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 5px 10px;
+  color: white;
+  margin-right: 10px;
 }
 
-.link:hover{
-    text-decoration: underline;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
+.link:hover {
+  text-decoration: underline;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-.todos{
- 
+.todos {
 }
 
 /* PAGINA PRINCIPAL INTEIRA */
-.container__pagina__principal{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-    min-height: 800px;
+.container__pagina__principal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  min-height: 800px;
 }
-
 
 /**** CARD PRODUTO ****/
 
-.vitrine{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
+.vitrine {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.card__produto{
-    width: 270px;
-    height: 202px;
-    height: 410px;
-    display: inline-block;
+.card__produto {
+  width: 270px;
+  height: 202px;
+  height: 410px;
+  display: inline-block;
 }
 
-.figure{
-    border: 3px solid #F5F5F5;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
+.figure {
+  border: 3px solid #f5f5f5;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.imagem__card{
-    width: 140px;
-    height: 140px;
+.imagem__card {
+  width: 140px;
+  height: 140px;
 }
 
-.card__descricao__produto{
-    border: 3px solid #F5F5F5; 
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 5px;
+.card__descricao__produto {
+  border: 3px solid #f5f5f5;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
 }
 
-.sessao__produto{
-    background-color: #2E245E;
-    width: 70px;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 5px 10px;
-    border-radius: 5px;
+.sessao__produto {
+  background-color: rgb(248, 0, 50);
+  width: 70px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.nome__produto{
-    font-size: 18px;
-    line-height: 24px;
+.nome__produto {
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.info__produto{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+.info__produto {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.preco__produto{
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 16px;
-    color: #2E245E;
+.preco__produto {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: rgb(248, 0, 50);
 }
 
-.botao__adicionar__carrinho{
-    border: none;
-    background-color: white;
-    font-weight: 500;
-    font-size: 14px;
-    text-align: left;
-    width: 150px;
-    height: 20px;
+.botao__adicionar__carrinho {
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  width: 150px;
+  height: 20px;
 }
 
-.botao__adicionar__carrinho:hover{
-    cursor: pointer;
-    color: white;
-    background-color: #2E245E;
-    border: 1px solid #2E245E;
-    border-radius: 5px;
-    width: 150px;
+.botao__adicionar__carrinho:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(248, 0, 50);
+  border: 1px solid rgb(248, 0, 50);
+  border-radius: 5px;
+  width: 150px;
 }
 
-.container__aside{
-    width: 300px;
+.container__aside {
+  width: 300px;
 }
 
 /**** BARRA DE PESQUISA ****/
-.container__barra__pesquisa{
-    width: 300px; 
+.container__barra__pesquisa {
+  width: 300px;
 }
 
-.input__pesquisa{
-    padding: 0.5rem;
-    border: 1px solid #F5F5F5;
-    width: 200px;
-
+.input__pesquisa {
+  padding: 0.5rem;
+  border: 1px solid #f5f5f5;
+  width: 200px;
 }
 
-.botao__pesquisar{
-    border: none;
-    padding: 0.5rem;
-    background-color: #2E245E;
-    color: white;
-    cursor: pointer;
+.input__pesquisa::placeholder {
+  color: rgba(248, 0, 50, 0.664);
 }
 
+.botao__pesquisar {
+  border: none;
+  padding: 0.5rem;
+  background-color: rgb(248, 0, 50);
+  color: white;
+  cursor: pointer;
+}
 
 /* CARRINHO DE COMPRAS */
 
-.container__carrinho__compras{
-    position: sticky;
-    top: 20px;
-    margin-top: 20px;
+.container__carrinho__compras {
+  position: sticky;
+  top: 20px;
+  margin-top: 20px;
 }
 
 /* CARRINHO DE COMPRAS - VAZIO */
 
-.container__produto__carrinho{
-
+.container__produto__carrinho {
 }
 
-.titulo__carrinho{
-    padding: 1rem;
-    background-color: #37268C;
-    color: white;
-    font-size: 18px;
-    line-height: 24px;
+.titulo__carrinho {
+  padding: 1rem;
+  background-color: rgb(248, 0, 50);
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.produtos__carrinho{
-    background-color: #F5F5F5;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
+.produtos__carrinho {
+  background-color: #f5f5f5;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
-.mensagem__vazio{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 60%;
+.mensagem__vazio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 60%;
 }
 
-.carrinho__vazio{
-    font-size: 22px;
-    line-height: 24px;
-    margin-top: 80px;
-
+.carrinho__vazio {
+  font-size: 22px;
+  line-height: 24px;
+  margin-top: 80px;
 }
 
-.adicione__itens{
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 5px;
+.adicione__itens {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
 }
-
 
 /* CARRINHO DE COMPRAS - COM PRODUTOS */
 
-.container__produto__carrinho{
-    display: flex;
-    flex-direction: row;
-    width: 260px;
-    gap: 20px;
+.container__produto__carrinho {
+  display: flex;
+  flex-direction: row;
+  width: 260px;
+  gap: 20px;
 }
 
-.figure__carrinho{
-    
-
+.figure__carrinho {
 }
 
-.imagem__carrinho{
-    width: 100px;
-    height: 100px;
-    background-color: white;
+.imagem__carrinho {
+  width: 100px;
+  height: 100px;
+  background-color: white;
 }
 
-.descricao__produto__carrinho{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    
-
+.descricao__produto__carrinho {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.titulo__produto{
-    font-size: 16px;
-    line-height: 24px;
+.titulo__produto {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.preco__carrinho{
-    font-size: 14px;
-    line-height: 16px;
-    color: #2E245E;
-
+.preco__carrinho {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(248, 0, 50);
 }
 
-.botao__remover{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    border: none;
-    background-color: #F5F5F5;
-    display: block;
-
+.botao__remover {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  background-color: #f5f5f5;
+  display: block;
 }
 
-.botao__remover:hover{
-    cursor: pointer;
-    background-color: #37268C;
-    color: white;
-    border-radius: 5px;
+.botao__remover:hover {
+  cursor: pointer;
+  background-color: rgb(248, 0, 50);
+  color: white;
+  border-radius: 5px;
 }
-
 
 /* RODAPÉ CARRINHO DE COMPRAS */
-.container__rodape{
-    background-color: #292929;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px;
-    gap: 15px;
-    display: none;
+.container__rodape {
+  background-color: rgb(248, 0, 50);
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  gap: 15px;
+  display: none;
 }
 
-.container__quantidade{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 10px
+.container__quantidade {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
 
-.texto__quantidade{
-
+.texto__quantidade {
 }
 
-.quantidade{
-
+.quantidade {
 }
 
-.container__preco{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 10px
+.container__preco {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
 
-.texto__total{
-
+.texto__total {
 }
 
-.total{
-
+.total {
 }
 
 /* FOOTER */
-.rodape{
-    width: 100%;
-    height: 90px;
-    background-color: #615e5e;
-    border-radius: 0px 10px;
-    margin-top: 20px;
+.rodape {
+  width: 100%;
+  height: 90px;
+  background-color: rgb(248, 0, 50);
+  border-radius: 0px 10px;
+  margin-top: 20px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.rodape__frase{
-    color: white;
-    padding: 10px;
+.rodape__frase {
+  color: white;
+  padding: 10px;
 }
 
-.rodape__imagens{
-    
+.rodape__imagens {
 }
 
-.id__imagem{
-    margin: 5px;
-    
+.id__imagem {
+  margin: 5px;
 }

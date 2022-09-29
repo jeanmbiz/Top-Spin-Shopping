@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style/reset-padrao.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
-
-    <title>Entrega Final - Módulo 1</title>
+    <title>Top Spin Shopping</title>
   </head>
   <body>
     <header class="header">
       <div class="">
-        <h1 class="nome__loja">Weartake</h1>
+        <h1 class="nome__loja">Top Spin Shopping</h1>
       </div>
-
       <nav class="links">
         <a class="link todos" href="#">Todos</a>
         <a class="link acessorios" href="#">Acessórios</a>
@@ -22,23 +24,8 @@
         <a class="link camisetas" href="#">Bolsas</a>
       </nav>
     </header>
-
     <main class="container__pagina__principal">
-      <ul class="vitrine">
-        <!-- <li class="card__produto">
-          <figure class="figure">
-            <img class="imagem__card" src="https://i0.wp.com/techwek.com/wp-content/uploads/2020/12/foto-1.jpg?w=600&ssl=1" alt="">
-          </figure>
-          <div class="card__descricao__produto">
-            <p class="sessao__produto">Camisetas</p>
-            <h2 class="nome__produto">Lightweight Jacket</h2>
-            <p class="info__produto">Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...</p>
-            <p class="preco__produto">R$ 100.00</p>
-            <button class="botao__adicionar__carrinho">Adicionar ao carrinho</button>
-          </div>
-        </li> -->
-      </ul>
-
+      <ul class="vitrine"></ul>
       <aside class="container__aside">
         <form class="container__barra__pesquisa" action="">
           <input
@@ -48,28 +35,12 @@
           />
           <button class="botao__pesquisar">Pesquisar</button>
         </form>
-
         <div class="container__carrinho__compras">
           <h2 class="titulo__carrinho">Carrinho de compras</h2>
           <ul class="produtos__carrinho">
             <h2 class="carrinho__vazio">Carrinho vazio</h2>
             <p class="adicione__itens">Adicione itens</p>
-
-            <!-- CARRINHO COM PRODUTOS -->
-            <!-- <li class="container__produto__carrinho">
-              <figure class="figure__carrinho">
-                <img class="imagem__carrinho" src= "./src/img/jaqueta.svg" alt="">
-              </figure>
-              <div class="descricao__produto__carrinho">
-                <h2 class="titulo__produto">Lightweight Jacket</h2>
-                <p class="preco__carrinho">R$ 100,00</p>
-                <button class="botao__remover">Remover produto</button>
-              </div>
-            </li> -->
           </ul>
-
-          <!-- RODAPÉ CARRINHO COM PRODUTOS -->
-
           <div class="container__rodape">
             <div class="container__quantidade">
               <p class="texto__quantidade">Quantidade:</p>
@@ -83,20 +54,31 @@
         </div>
       </aside>
     </main>
-
     <footer class="rodape">
       <h2 class="rodape__frase">Desenvolvido por: Jean Michel Biz</h2>
       <div class="rodape__imagens">
-        <a class="id__imagem" href="https://www.linkedin.com/in/jeanmbiz/" target="_blank">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKESURBVFiF7Zg9aBRBGIbfd+4EFRQ89AwoSaEo2gXUNtiJcJVY2FiIImlsFJvgCZIDIWBjkyppApZWNjamsIkoFjY2ij8YOVCUCJpE93stPOG8m9nbk5vbLPrAFjvfN98+DMP8LCWVzaxO8gKAEWw8XpGcA9BgkiTTJKfyNuoFyTrNrAmgmrdMBt7RzJS3RUbk8jboA2aV/QTAYppkIVVW0hzJA865CskKyTpylA7OWUm3SqXSZU/7lKTp+GrdhGTXSe4iudIZkLRFUhPAtvh6fxKaBss+UQAg+Q3As3hKYUKyI5K8IyfJAdgbTylMSHYzgHOB2CkAo3F00knbFL6TPA9ggaQBgKSapAUA24dm2EaWHewFgOcADgLYH18pTJG2W5SH+K1VAI8lvQGwSrIKYBzAnqwFgrIkrwC46wkdk3Sn7f0RyTOevFFJDwB8ITkD4DbJz51Jko5KugHgRE9bM5PvkXTWly9poiN3MZC3z8yWJY33cpDEJElmQi6/n5inrnWSNZJPeyWSlHPuKoCHaXnRZEm+Jfmkj3yRvJ6WMwjZQa4miwCaoWCa7EAkJO1OkuSmmd03s3uSJltbdhetzWcpVCvq0iWpImmJ5Fhb20mSFQCNQJ+XJL31Yl9rLgIY62yUdCnUwTn3IRgbkJQXSROBUFVS6Eb9MVQv9simXfG7RrzFWqhDbNkdKbFN/RaLvXSV/jLmJfrSNUiK9JNjw+1gqfxzIzs0/svGolCywVOXmR2XtBXACoCkrf1wx6moKum0r0arf6h+TdKh1usagK+t9iOhU1ehruKFmgZFkpXDr1/wReC9kzSbt0UWSM6WnXPXzOwHyUkAO/OW8vBa0jzJxk9B/0ocqEyK3gAAAABJRU5ErkJggg==" alt="link-linkedin">
+        <a
+          class="id__imagem"
+          href="https://www.linkedin.com/in/jeanmbiz/"
+          target="_blank"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKESURBVFiF7Zg9aBRBGIbfd+4EFRQ89AwoSaEo2gXUNtiJcJVY2FiIImlsFJvgCZIDIWBjkyppApZWNjamsIkoFjY2ij8YOVCUCJpE93stPOG8m9nbk5vbLPrAFjvfN98+DMP8LCWVzaxO8gKAEWw8XpGcA9BgkiTTJKfyNuoFyTrNrAmgmrdMBt7RzJS3RUbk8jboA2aV/QTAYppkIVVW0hzJA865CskKyTpylA7OWUm3SqXSZU/7lKTp+GrdhGTXSe4iudIZkLRFUhPAtvh6fxKaBss+UQAg+Q3As3hKYUKyI5K8IyfJAdgbTylMSHYzgHOB2CkAo3F00knbFL6TPA9ggaQBgKSapAUA24dm2EaWHewFgOcADgLYH18pTJG2W5SH+K1VAI8lvQGwSrIKYBzAnqwFgrIkrwC46wkdk3Sn7f0RyTOevFFJDwB8ITkD4DbJz51Jko5KugHgRE9bM5PvkXTWly9poiN3MZC3z8yWJY33cpDEJElmQi6/n5inrnWSNZJPeyWSlHPuKoCHaXnRZEm+Jfmkj3yRvJ6WMwjZQa4miwCaoWCa7EAkJO1OkuSmmd03s3uSJltbdhetzWcpVCvq0iWpImmJ5Fhb20mSFQCNQJ+XJL31Yl9rLgIY62yUdCnUwTn3IRgbkJQXSROBUFVS6Eb9MVQv9simXfG7RrzFWqhDbNkdKbFN/RaLvXSV/jLmJfrSNUiK9JNjw+1gqfxzIzs0/svGolCywVOXmR2XtBXACoCkrf1wx6moKum0r0arf6h+TdKh1usagK+t9iOhU1ehruKFmgZFkpXDr1/wReC9kzSbt0UWSM6WnXPXzOwHyUkAO/OW8vBa0jzJxk9B/0ocqEyK3gAAAABJRU5ErkJggg=="
+            alt="link-linkedin"
+          />
         </a>
-        <a class="id__imagem" href="https://github.com/jeanmbiz" target="_blank">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAsCAYAAADxRjE/AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAR6SURBVFiFxZhfiFVVGMXX2tqoSJYjaj0opmlRmoN/ygzsz0tvgtAfhf5CEhVUTz0FQdCD9BQSZRHWiwlWSJEmPklFTPSSJopoijJEUlKZOqPzrdXDHOt6PPecM3fOnRach3u/b6/92/ves/e3NzFG2b4ZwIOSFpO8DcAtAHqy8BQApwGctH0ypfQ9gD0kD4+1305Ab4yI1yTtl+QOnhMR8abt+eMBOz8i3pU02CFs/hmOiO22F3UDtieb2aGGYPPPUERssj2lDg9rAC+xvQ3A4jGPvlo/kVxP8mBZUim07QdsfwbgukbRynWO5CMkd7VLSO0Cth+2vRvjCwwAU23vtP1ou4TCmc5meDf+W7r+D10iuZbkV/nAVdC2b7f9LcZ/hov0F8mVJI+0fnkFtO0e2/0A+goMdpPcJWkJyXUAZjYAdcr2xymlo7Y3ALi/IGc/yTtJDhU6RMTr7ZYl22tzg3ta0sk2+ZcknZF0oU38iO3HbU9o8dzQru+IeKOVky2NFto+COCaogGRXEDy59bvsnX1OUlzU0rfATgAYIDkny050wDMA9AnaVlKaQDAWyQv5rzm2T5eOJvAMMlFJK+MR8S2sg3Adm8bw0Zke1pZ/xHxdr7BTZKGK6Bv6DL0jIpd87zt2UC2Tkt6HsCEUldgbjehMVIdlmmKpBcBINkmybYLeSajelBjVU/WT1uRfNI2YXtZVUETEe91GRgAEBFbq1hsr0oA7q3wGkopvToe0Fk/FyvS1iRJKyqSviB5uiGuUpEcAPBlWY6kpYlkaclJcm+jZBUiuacivjABmFXhc6g5pFo6UhGflQBMr0g61xBMXVX9FXsTqpeyqQ3B1NW1FfGeBGCwImlaQzB1NaMiPjEB+LsiaXlDMLVUYzX7IwE4VZZhu2odb1Qkq/r7LZWUg5e1utsV3mVlBdHqirTDKbuqKtNkABubwSqXpJcATCrLIfkDbK+qcZly1vaCbgLbXlFy0mmtPdbAdpL0Sw3wY7bndQn41pKjW+vzq+0JiaRs76zhPd92v+2HGoRN2VmxH8CcGvmfkIzLH64qT22/bPsVSYcKRtxv+wnbHZ3Ibc+2vVGju3WV7SvrJEl7czX0B7Yn2Z4YEZvbGIWkg5J22C492dheKGmHpB+zdqO9pLy6kLLdV2C2z/Zk25T0eYnhjjoznEGPFtaShm0vLTSNiPfzDSJiUzaoXkkn2rzRtTYg2/d0Ah0RW8pMp0s6lmt0wfacLL5A0jetMUmf2i68Kynwn9kB9FHb11cZ90k6nxvp1lxOb/YylW4EBd5JI7dPdYHP2b6jrvljGlHrm/vsaADbSTU2kJY+1xd5tL1Ut/2C7c25nH3ZZfcBAGcwcuSfSbL0XJeDHkTFVo2Ra7BnSH5U1/df2X6qxs9ZVdrmoS9W+A3aXjdq2Bz4fZIGGoQuW6OP2757TMAt4L0R8U6bDmtDZ+u9CjwUEVsrV4kO4ZdL+jrX4dnReEj6Pdd+n+2VjcPmZfuuiPhQ0umI2D6athGxRdJARGzpFPYf/zgGauL+EGwAAAAASUVORK5CYII=" alt="link-github">
+        <a
+          class="id__imagem"
+          href="https://github.com/jeanmbiz"
+          target="_blank"
+        >
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAsCAYAAADxRjE/AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAR6SURBVFiFxZhfiFVVGMXX2tqoSJYjaj0opmlRmoN/ygzsz0tvgtAfhf5CEhVUTz0FQdCD9BQSZRHWiwlWSJEmPklFTPSSJopoijJEUlKZOqPzrdXDHOt6PPecM3fOnRach3u/b6/92/ves/e3NzFG2b4ZwIOSFpO8DcAtAHqy8BQApwGctH0ypfQ9gD0kD4+1305Ab4yI1yTtl+QOnhMR8abt+eMBOz8i3pU02CFs/hmOiO22F3UDtieb2aGGYPPPUERssj2lDg9rAC+xvQ3A4jGPvlo/kVxP8mBZUim07QdsfwbgukbRynWO5CMkd7VLSO0Cth+2vRvjCwwAU23vtP1ou4TCmc5meDf+W7r+D10iuZbkV/nAVdC2b7f9LcZ/hov0F8mVJI+0fnkFtO0e2/0A+goMdpPcJWkJyXUAZjYAdcr2xymlo7Y3ALi/IGc/yTtJDhU6RMTr7ZYl22tzg3ta0sk2+ZcknZF0oU38iO3HbU9o8dzQru+IeKOVky2NFto+COCaogGRXEDy59bvsnX1OUlzU0rfATgAYIDkny050wDMA9AnaVlKaQDAWyQv5rzm2T5eOJvAMMlFJK+MR8S2sg3Adm8bw0Zke1pZ/xHxdr7BTZKGK6Bv6DL0jIpd87zt2UC2Tkt6HsCEUldgbjehMVIdlmmKpBcBINkmybYLeSajelBjVU/WT1uRfNI2YXtZVUETEe91GRgAEBFbq1hsr0oA7q3wGkopvToe0Fk/FyvS1iRJKyqSviB5uiGuUpEcAPBlWY6kpYlkaclJcm+jZBUiuacivjABmFXhc6g5pFo6UhGflQBMr0g61xBMXVX9FXsTqpeyqQ3B1NW1FfGeBGCwImlaQzB1NaMiPjEB+LsiaXlDMLVUYzX7IwE4VZZhu2odb1Qkq/r7LZWUg5e1utsV3mVlBdHqirTDKbuqKtNkABubwSqXpJcATCrLIfkDbK+qcZly1vaCbgLbXlFy0mmtPdbAdpL0Sw3wY7bndQn41pKjW+vzq+0JiaRs76zhPd92v+2HGoRN2VmxH8CcGvmfkIzLH64qT22/bPsVSYcKRtxv+wnbHZ3Ibc+2vVGju3WV7SvrJEl7czX0B7Yn2Z4YEZvbGIWkg5J22C492dheKGmHpB+zdqO9pLy6kLLdV2C2z/Zk25T0eYnhjjoznEGPFtaShm0vLTSNiPfzDSJiUzaoXkkn2rzRtTYg2/d0Ah0RW8pMp0s6lmt0wfacLL5A0jetMUmf2i68Kynwn9kB9FHb11cZ90k6nxvp1lxOb/YylW4EBd5JI7dPdYHP2b6jrvljGlHrm/vsaADbSTU2kJY+1xd5tL1Ut/2C7c25nH3ZZfcBAGcwcuSfSbL0XJeDHkTFVo2Ra7BnSH5U1/df2X6qxs9ZVdrmoS9W+A3aXjdq2Bz4fZIGGoQuW6OP2757TMAt4L0R8U6bDmtDZ+u9CjwUEVsrV4kO4ZdL+jrX4dnReEj6Pdd+n+2VjcPmZfuuiPhQ0umI2D6athGxRdJARGzpFPYf/zgGauL+EGwAAAAASUVORK5CYII="
+            alt="link-github"
+          />
         </a>
       </div>
-      
     </footer>
-
     <script type="module" src="./src/js/script.js"></script>
   </body>
 </html>
