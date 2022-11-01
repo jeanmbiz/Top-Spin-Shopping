@@ -2,7 +2,13 @@
 
 # Sobre o projeto
 
-## Neste projeto, tive a oportunidade de construir o front-end de um e commerce, onde coloquei em prática o aprendizado em HTML, CSS e Javascript:
+## Neste projeto, tive a oportunidade de construir o front-end de um e commerce:
+
+# Tecnologias utilizadas
+## Front end
+- HTML
+- CSS
+- Javascript
 
 Na época, com apenas 2 meses de curso foi um grande desafio, mas hoje vejo como a evolução foi extraordinária e todas as horas de estudo valeram a pena! É realmente gratificante perceber no final de cada trabalho o resultado do esforço e a evolução do conhecimento.
 
@@ -13,11 +19,7 @@ Na época, com apenas 2 meses de curso foi um grande desafio, mas hoje vejo como
 
 veja mais em: https://jeanmbiz.github.io/Top-Spin-Shopping/
 
-# Tecnologias utilizadas
-## Front end
-- HTML
-- CSS
-- Javascript
+
 
 # Autor
 
