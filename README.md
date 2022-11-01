@@ -17,4 +17,4 @@ Na época, com apenas 2 meses de curso foi um grande desafio, mas hoje vejo como
 - carrinho faz a soma da quantidade de produtos e valor total
 - barra de pesquisas
 
-## GithubPages: https://jeanmbiz.github.io/Top-Spin-Shopping/
+## GitHubPages: https://jeanmbiz.github.io/Top-Spin-Shopping/
