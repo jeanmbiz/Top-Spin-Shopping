@@ -18,11 +18,3 @@ Na época, com apenas 2 meses de curso foi um grande desafio, mas hoje vejo como
 - barra de pesquisas
 
 ## veja mais em: https://jeanmbiz.github.io/Top-Spin-Shopping/
-
-
-
-# Autor
-
-Jean Michel Biz
-
-https://www.linkedin.com/in/jeanmbiz/
