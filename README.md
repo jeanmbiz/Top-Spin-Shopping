@@ -2,7 +2,7 @@
 
 # Sobre o projeto
 
-## Neste projeto, tive a oportunidade de construir o front-end de um e commerce:
+Neste projeto, tive a oportunidade de construir o front-end de um e commerce:
 
 # Tecnologias utilizadas
 ## Front end
