@@ -1,4 +1,4 @@
-(./github/pagina%20inicial.jpg) 
+![SITE](./github/pagina%20inicial.jpg) 
 
 # Sobre o projeto
 
