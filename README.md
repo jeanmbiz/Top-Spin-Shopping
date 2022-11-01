@@ -1,5 +1,5 @@
 # TOP SPIN
-![SITE]('./github/pagina inicial.jpg') 
+![SITE](./github/pagina%20inicial.jpg) 
 
 # Sobre o projeto
 
