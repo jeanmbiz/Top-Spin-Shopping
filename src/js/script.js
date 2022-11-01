@@ -195,5 +195,3 @@ function pesquisarProduto(event) {
     cardProduto(produtosFiltrados);
   }
 }
-
-// ARRUMAR TAMANHO DA FONTE DO NOME DO PRODUTO DENTRO DO CARRINHO
