@@ -1,8 +1,9 @@
+## Layout Web
 ![SITE](./github/pagina%20inicial.jpg) 
 
 # Sobre o projeto
 
-Neste projeto, tive a oportunidade de construir o front-end de um e commerce:
+Neste projeto, tive a oportunidade de construir o front-end de um e commerce em JavaScript Vanilla:
 
 # Tecnologias utilizadas
 ## Front end
